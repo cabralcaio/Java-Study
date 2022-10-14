@@ -1,8 +1,9 @@
+package aulas;
+
 public class Variaveis {
     public static void main(String[] args) {
         System.out.println("Hello, World!"); // Printa o que estiver entre parenteses
 
-        // Variaveis no JAVA
         // fortemente tipado e estaticamente tipado
         int idade = 20; // inteiro (até 2Bilhoes)
         double salario = 4500.99; // numero quebrado - dupla preocisao

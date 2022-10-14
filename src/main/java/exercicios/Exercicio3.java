@@ -1,3 +1,5 @@
+package exercicios;
+
 public class Exercicio3 {
     public static void main(String[] args) {
         int[] array1 = {1,22,333,4444};
