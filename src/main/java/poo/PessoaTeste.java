@@ -1,15 +1,14 @@
 package poo;
-//intuito testar o uso da classe pessoa
+// intuito: testar o uso da classe Pessoa
 public class PessoaTeste {
     public static void main(String[] args) {
-//new -> contrói um NOVO objeto de Pessoa
-        //está estrutura é somente para exemplos o certo é utilizar o contrutor
+        // new => constrói um NOVO objeto de Pessoa
         Pessoa pessoa1 = new Pessoa();
-        pessoa1.nome = "Misato"; //obj.atributo = atribui um novo o valor
-        pessoa1.sobrenome = "Katsuragi";
+        pessoa1.nome = "José"; // obj.atributo
+        pessoa1.sobrenome = "Carlos";
         pessoa1.idade = 29;
-        pessoa1.peso = 50.0;
-        pessoa1.altura = 1.60;
+        pessoa1.peso = 55.0;
+        pessoa1.altura = 1.65;
 
         pessoa1.dizOla();
 
@@ -19,14 +18,30 @@ public class PessoaTeste {
 
         Pessoa pessoa4 = new Pessoa("Pedro", "Gomes", 35, 1.75, 30.5);
 
-        Pessoa recemNascido = new Pessoa("Enzo", "Pereira");
-        System.out.println(recemNascido.altura);
-        recemNascido.idade++; //envelhece
+        Pessoa pessoa5 = new Pessoa("Carlos", "José", 22, 1.9, 77.0);
 
+        Pessoa recemNascido = new Pessoa("Enzo", "Pereira");
+
+        System.out.println(recemNascido.altura);
+        recemNascido.idade++; // envelhecer
+        recemNascido.dizOla();
+
+        // Chamada de métodos
         pessoa4.dizOla();
-        pessoa4.mostrarIMC();
-        double imcPessoa4 = pessoa4.calcularIMC();
+        pessoa4.mostrarImc();
+        double imcPessoa4 = pessoa4.calculaImc();
         System.out.println(imcPessoa4);
+
         pessoa4.comer("Batata");
+
+        // Exemplo pessoas
+        Pessoa pedro = new Pessoa("Pedro", "José", 29, 1.8, 80);
+
+        Pessoa joao = new Pessoa("João", "Carlos", 30, 1.75, 90);
+        System.out.println("================");
+
+        pedro.cumprimentar(joao);
+        pedro.cumprimentar(joao);
+        pedro.comer("Batata");
     }
 }
